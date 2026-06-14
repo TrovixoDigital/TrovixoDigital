@@ -6,180 +6,129 @@
 
   <title>Trovixo</title>
 
-  <style>
-
-     body 
-    
-    {
+<style>
+  
+    body 
+  
+  {
      
-     font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-      
-        margin: 0;
-      
-        padding: 0;
-      
-        background: #CCEBF3;
-      
-        color: #000;
-      
-        line-height: 1.6;
-      
-        display: flex;
-      
-        justify-content: center;
-      
-        min-height: 100vh;
-   
-    }
-
+    font-family: 'Inter', -apple-system, sans-serif;
+    
+    margin: 0;
+     
+    padding: 0;
+     
+    background: #CCEBF3;
+    
+    color: #1a1a1a;
+     
+    line-height: 1.7;
+    
+    display: flex;
+    
+    justify-content: center;
+    
+    min-height: 100vh;
+  
+  }
 
     .container 
+  
+  {
     
-    {
-      
-      max-width: 650px;
-      
-      margin: 40px 20px;
-      
+      max-width: 700px;
+    
+      margin: 60px 20px;
+    
       background: white;
     
-      padding: 50px;
-      
-      border-radius: 20px;
-       
-      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-
+      padding: 80px;
+     
+      border-radius: 30px;
+    
+      box-shadow: 0 20px 50px rgba(0,0,0,0.07);
+    
     }
 
+  h1 { font-size: 48px; letter-spacing: -2px; margin-bottom: 5px; }
+   
+  h2 { margin-top: 60px; font-size: 28px; font-weight: 700; }
 
-    h1 {
+    /* Modern Price List */
+   
+  .price-item 
+  
+  { 
+     
+    display: flex; 
+    
+    justify-content: space-between; 
+   
+    padding: 15px 0; 
+     
+    border-bottom: 1px solid #f0f0f0; 
+   
+  }
+  
+  .price-item span:last-child { font-weight: 600; color: #008080; }
 
-      font-size: 34px;
+    /* Modern Cards */
+    
+  .card 
+  
+  { 
+    
+    background: #fafafa; 
+     
+    padding: 30px; 
+     
+    border-radius: 20px; 
+     
+    margin-bottom: 20px; 
+   
+  }
+    
+    /* Testimonial Accents */
+   
+  .accent-pink { border-left: 6px solid #EDC1CC; }
+   
+  .accent-brown { border-left: 6px solid #C19A6B; }
+ 
+  .accent-yellow { border-left: 6px solid #F7E08B; }
 
-      margin-bottom: 10px;
-
-       color: #000; letter-spacing: -0.5px;
-
-    }
-
-
-
-    h2 {
-
-      margin-top: 30px;
-
-      font-size: 22px;
-
-     color: #000; letter-spacing: -0.5px; 
-
-    }
-
-
-
-    p, li {
-
-      font-size: 15px;
-
-      line-height: 1.6;
-
-    }
-
-
-
-    ul {
-
-      padding-left: 18px;
-
-    }
-
-
-
-    .section {
-
-      margin-top: 20px;
-
-    }
-
-
-
-    .price-table {
-
-      width: 100%;
-
-      border-collapse: collapse;
-
-      margin-top: 10px;
-
-    }
-
-
-
-    .price-table td, .price-table th {
-
-      border: 1px solid #ddd;
-
-      padding: 10px;
-
-      text-align: left;
-
-    }
-
-
-
-    .cta-button {
-
-      display: block;
-      
-      width: 100%;
-      
-      text-align: center;
-        
-      padding: 18px;
-       
-      font-size: 16px;
-       
-      font-weight: 600;
-       
-      background: #008080; /* Teal highlight */
-      
-      color: white;
-       
-      text-decoration: none;
-      
-      border-radius: 12px;
-      
-      transition: 0.3s;
-
-    }
-
-    .cta-button:hover { background: #006666; }
-
-
-    .footer {
-
-      text-align: center;
-
-      font-size: 13px;
-
-      color: #666;
-
-      margin: 40px 0 10px;
-
-    }
-
-
-
-    .footer a {
-
-      color: #333;
-
-      text-decoration: none;
-
-      margin: 0 5px;
-
-    }
-
-  </style>
+    .cta-button 
+  
+  {
+    
+    display: block;
+     
+    width: 100%;
+     
+    text-align: center;
+    
+    padding: 20px;
+    
+    font-size: 18px;
+     
+    font-weight: 700;
+   
+    background: #000;
+     
+    color: white;
+    
+    text-decoration: none;
+    
+    border-radius: 15px;
+   
+    margin-top: 40px;
+   
+    transition: 0.3s;
+   
+  }
+ 
+  .cta-button:hover { background: #333; transform: scale(1.02); }
+ 
+</style>
 
 </head>
 
@@ -281,107 +230,27 @@
 
     <!-- PRICING -->
 
-    <div class="section">
+   <div class="section">
+     
+  <h2>Pricing</h2>
+     
+  <div class="price-item"><span>Template Post</span><span>₹300 / $5</span></div>
+     
+  <div class="price-item"><span>Custom Post</span><span>₹500 / $8</span></div>
+     
+  <div class="price-item"><span>Template Carousel (5 Slides)</span><span>₹600 / $10</span></div>
 
-      <h2>Pricing</h2>
+  <div class="price-item"><span>Custom Carousel (5 Slides)</span><span>₹1,000 / $20</span></div>
 
+  <div class="price-item"><span>Template Carousel (5 Slides)</span><span>₹900 / $15</span></div>
+ 
+  <div class="price-item"><span>Custom Carousel (8 Slides)</span><span>₹1,500 / $30</span></div>
+     
+  <div class="price-item"><span>Basic Logo Design</span><span>₹800 / $12</span></div>
 
+  <div class="price-item"><span>Basic Brand Health Audit</span><span>₹1,200 / $25</span></div>  
 
-      <table class="price-table">
-
-        <tr>
-
- <th>Service</th>
-
-          <th>Price (INR / USD)</th>
-
-        </tr>
-
-        <tr>
-
-          <td  colspan="2"><strong>Content Posts</strong></td>
-
-        </tr>
-
-        <tr>
-
-          <td><strong>Template Post</strong></td>
-
-          <td>₹300 / $5</td>
-
-        </tr>
-
-        <tr>
-
-          <td><strong>Custom Post</strong></td>
-
-          <td>₹500 / $8</td>
-
-        </tr>
-
-        <tr>
-
-           <td colspan="2"><strong>Carousel Design</strong></td>
-
-        </tr>
-
-        <tr>
-
-           <td><strong>Template Carousel (5 Slides)</strong></td>
-
-          <td>₹600 / $10</td>
-
-        </tr>
-
-        <tr>
-
-           <td><strong>Template Carousel (8 Slides)</strong></td>
-
-          <td>₹900 / $15</td>
-
-        </tr>
-
-        <tr>
-
-           <td><strong>Custom Carousel (5 Slides)</strong></td>
-
-          <td>₹1,000 / $20</td>
-
-        </tr>
-
-        <tr>
-
-           <td><strong>Custom Carousel (8 Slides)</strong></td>
-
-          <td>₹1,500 / $30</td>
-
-        </tr>
-        
-        <tr>
-          
-          <td colspan="2"><strong>Branding</strong></td>
-        
-        </tr>
-
-        <tr>
-
-           <td><strong>Basic Logo Design</strong></td>
-
-          <td>₹800 / $12</td>
-
-        </tr>
-
-        <tr>
-
-           <td><strong>Basic Brand Health Audit</strong></td>
-
-          <td>₹1,200 / $25</td>
-
-        </tr>
-
-      </table>
-
-    </div>
+</div>
 
 
 
@@ -413,50 +282,54 @@
       
     <!-- Testimonials -->
       
-    <div style="margin: 25px 0;">
+   <div class="section">
+     
+  <h2>Feedback on Our Work</h2>
+     
+  <p style="font-size: 14px; color: #666; margin-bottom: 25px;">
     
-     <h3 style="font-size: 18px; margin-bottom: 5px;">Feedback on Our Work</h3>
+    Feedback received on design work and logo concepts.
+    
+  </p>
 
-      <p style="font-size: 14px; color: #666; margin-bottom: 15px;">
+  <!-- Testimonial 1 -->
+     
+  <div class="card accent-pink">
+    
+    <div style="color: #FFD700; font-size: 16px; margin-bottom: 8px;">★★★★★</div>
+    
+    <p style="font-style: italic; font-size: 14px;">"Hey. I just wanted to say thankyou 👏❤️. Thankyou for giving me the best logo to my page 👏. Thanks alott. I really liked it✨"</p>
+    
+    <p style="font-size: 13px; font-weight: bold; margin-top: 10px;">— @blushonbymeghaa | Bridal Makeup Artist</p>
+    
+  </div>
 
-        Feedback received on design work and logo concepts.
+  <!-- Testimonial 2 -->
+     
+  <div class="card accent-brown">
+    
+    <div style="color: #FFD700; font-size: 16px; margin-bottom: 8px;">★★★★★</div>
+    
+    <p style="font-style: italic; font-size: 14px;">"Yes they were helpful and I'd pay for it. I offer those things myself so I understand the effort and effect."</p>
 
-      </p>
+    <p style="font-size: 13px; font-weight: bold; margin-top: 10px;">— @YOUnique Socials | ATL Creative Agency</p>
+    
+  </div>
 
-<!-- Testimonial cards follow here... -->
+  <!-- Testimonial 3 -->
+     
+  <div class="card accent-yellow">
+    
+    <div style="color: #FFD700; font-size: 16px; margin-bottom: 8px;">★★★★★</div>
+    
+    <p style="font-style: italic; font-size: 14px;">"Your logos look really nice — simple and well thought out. I like how you’ve kept the designs clean and balanced."</p>
+    
+    <p style="font-size: 13px; font-weight: bold; margin-top: 10px;">— @canva._.vibe | Digital Design & eBooks</p>
+    
+  </div>
+     
+</div>
       
-     <div style="background: #fdfdfd; padding: 15px; margin-bottom: 15px;" class="accent-pink">
-          
-          <div style="color: #FFD700; font-size: 16px;">★★★★★</div>
-          
-          <p style="font-style: italic; font-size: 14px;">"Hey. I just wanted to say thankyou 👏❤️. Thankyou for giving me the best logo to my page 👏. Thanks alott. I really liked it✨"</p>
-          
-          <p style="font-size: 13px; font-weight: bold; margin-top: 10px;">— @blushonbymeghaa | Bridal Makeup Artist </p>
-       
-        </div>
-        
-       <div style="background: #fdfdfd; padding: 15px; margin-bottom: 15px;" class="accent-brown">
-         
-          <div style="color: #FFD700; font-size: 16px;">★★★★★</div>
-        
-          <p style="font-style: italic; font-size: 14px;">"Yes they were helpful and I'd pay for it. I offer those things myself so I understand the effort and effect."</p>
-        
-          <p style="font-size: 13px; font-weight: bold;">— @YOUnique Socials | ATL Creative Agency </p>
-       
-        </div>
-        
-        <div style="background: #fdfdfd; padding: 15px; margin-bottom: 15px;" class="accent-yellow">
-         
-          <div style="color: #FFD700; font-size: 16px;">★★★★★</div>
-        
-          <p style="font-style: italic; font-size: 14px;">"Your logos look really nice — simple and well thought out. I like how you’ve kept the designs clean and balanced."</p>
-        
-          <p style="font-size: 13px; font-weight: bold; margin-top: 10px;">— @canva._.vibe | Digital Design & eBooks </p>
-       
-        </div>
-  
-    </div>
-
     <!-- The FINAL action -->
   
       <a class="cta-button" href="https://forms.gle/ohDHALSRmqGYg1vF9" target="_blank" style="display: block; text-align: center;">
