@@ -128,14 +128,19 @@
  
   .cta-button:hover { background: #333; transform: scale(1.02); }
 
-  .logo-container {
-        position: absolute;
-        top: 30px;
-        right: 30px;
-    }
-    .logo-container img {
-        width: 120px; /* Adjust size to look clean */
-    }
+ .logo-container 
+  
+  {
+   
+    position: absolute;
+    
+    top: 30px;
+   
+    right: 30px;
+   
+    z-index: 10;
+
+  }
  
 </style>
 
@@ -146,7 +151,16 @@
 <body>
 
 
-
+<body>
+  
+  <!-- Add this line here -->
+  
+  <div class="logo-container">
+    
+  <img src="My logo.png" style="width: 120px;">
+    
+  </div>
+    
   <div class="container">
 
 
