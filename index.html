@@ -12,42 +12,44 @@
     
     {
      
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
       
-      margin: 0;
-     
-      padding: 0;
-     
+        margin: 0;
       
-    /* This creates a soft, modern gradient background */
-    
-      background: linear-gradient(135deg, #f7f7f7 0%, #eef2f3 100%);
-    
-      color: #333;
-     
-      line-height: 1.8;
-     
-      /* Ensures the background covers the whole screen */
-    
-      min-height: 100vh;
+        padding: 0;
+      
+        background: #CCEBF3;
+      
+        color: #000;
+      
+        line-height: 1.6;
+      
+        display: flex;
+      
+        justify-content: center;
+      
+        min-height: 100vh;
    
     }
 
 
-    .container {
-
-      max-width: 850px;
-
-      margin: 40px auto;
-
+    .container 
+    
+    {
+      
+      max-width: 650px;
+      
+      margin: 40px 20px;
+      
       background: white;
-
-      padding: 30px;
-
-      border-radius: 12px;
+    
+      padding: 50px;
+      
+      border-radius: 20px;
+       
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 
     }
-
 
 
     h1 {
@@ -55,6 +57,8 @@
       font-size: 34px;
 
       margin-bottom: 10px;
+
+       color: #000; letter-spacing: -0.5px;
 
     }
 
@@ -65,6 +69,8 @@
       margin-top: 30px;
 
       font-size: 22px;
+
+     color: #000; letter-spacing: -0.5px; 
 
     }
 
@@ -122,26 +128,31 @@
 
     .cta-button {
 
-      display: inline-block;
-
-      margin-top: 15px;
-
-      padding: 16px 24px;
-
+      display: block;
+      
+      width: 100%;
+      
+      text-align: center;
+        
+      padding: 18px;
+       
       font-size: 16px;
-
-      font-weight: bold;
-
-      background: black;
-
+       
+      font-weight: 600;
+       
+      background: #008080; /* Teal highlight */
+      
       color: white;
-
+       
       text-decoration: none;
       
-      border-radius: 8px;
+      border-radius: 12px;
+      
+      transition: 0.3s;
 
     }
 
+    .cta-button:hover { background: #006666; }
 
 
     .footer {
@@ -414,7 +425,7 @@
 
 <!-- Testimonial cards follow here... -->
       
-        <div style="background: #fdfdfd; padding: 15px; border-left: 4px solid #000; margin-bottom: 15px;">
+     <div style="background: #fdfdfd; padding: 15px; margin-bottom: 15px;" class="accent-pink">
           
           <div style="color: #FFD700; font-size: 16px;">★★★★★</div>
           
@@ -424,7 +435,7 @@
        
         </div>
         
-        <div style="background: #fdfdfd; padding: 15px; border-left: 4px solid #000; margin-bottom: 15px;">
+       <div style="background: #fdfdfd; padding: 15px; margin-bottom: 15px;" class="accent-brown">
          
           <div style="color: #FFD700; font-size: 16px;">★★★★★</div>
         
@@ -434,7 +445,7 @@
        
         </div>
         
-        <div style="background: #fdfdfd; padding: 15px; border-left: 4px solid #000; margin-bottom: 15px;">
+        <div style="background: #fdfdfd; padding: 15px; margin-bottom: 15px;" class="accent-yellow">
          
           <div style="color: #FFD700; font-size: 16px;">★★★★★</div>
         
