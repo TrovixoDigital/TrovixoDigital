@@ -307,7 +307,7 @@ You receive simple suggestions to make your page look more professional.
 
 <div class="price-card">
 
-<h3>1 Page Content Design</h3>
+<h3>Posts</h3>
 
 <p>Template Post — ₹300 / $5</p>
 <p>Custom Post — ₹500 / $8</p>
@@ -389,31 +389,112 @@ Template-based designs remain the property of Trovixo.
 </div>
 
 <!-- TESTIMONIALS -->
+<style>
+/* Modern Testimonials Grid Grid */
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+/* Custom Interactive Card Styling */
+.review {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.03);
+  border: 1px solid #eaeef5;
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Eye-Catching Hover Animation */
+.review:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0,128,128,.08);
+  border-color: rgba(0,128,128,0.25);
+}
+
+/* Colored Psychological Rating Anchors */
+.stars {
+  color: #ffb800;
+  font-size: 20px;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+/* High Contrast Human-Readable Text */
+.review-text {
+  font-style: italic;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Clean Separator for Metadata Profiles */
+.reviewer-profile {
+  margin-top: auto;
+  padding-top: 15px;
+  border-top: 1px dashed #e6ebf4;
+}
+
+.reviewer-handle {
+  font-weight: bold;
+  color: #111;
+  display: block;
+  font-size: 14px;
+}
+
+/* Clear Identity Tag for Search Category Bots */
+.reviewer-tag {
+  font-size: 13px;
+  color: #008080;
+  font-weight: 600;
+  margin-top: 3px;
+  display: block;
+}
+</style>
 
 <h2 class="section-title">Client Feedback</h2>
 
 <div class="testimonials">
 
-<div class="review">
-★★★★★
-<br><br>
-<p>"Hey. I just wanted to say thankyou 👏❤️. Thankyou for giving me the best logo to my page 👏. Thanks alott. I really liked it✨"</p>
-<p>"@blushonbymeghaa | Bridal Makeup Artist"</p>
-</div>
+  <div class="review">
+    <div>
+      <div class="stars">★★★★★</div>
+      <p class="review-text">"Hey. I just wanted to say thankyou 👏❤️. Thankyou for giving me the best logo to my page 👏. Thanks alott. I really liked it✨"</p>
+    </div>
+    <div class="reviewer-profile">
+      <span class="reviewer-handle">@blushonbymeghaa</span>
+      <span class="reviewer-tag">Bridal Makeup Artist Niche</span>
+    </div>
+  </div>
 
-<div class="review">
-★★★★★
-<br><br>
-<p>"Yes they were helpful and I'd pay for it. I offer those things myself so I understand the effort and effect."</p>
-<p>"@YOUnique Socials | ATL Creative Agency"</p>
-</div>
+  <div class="review">
+    <div>
+      <div class="stars">★★★★★</div>
+      <p class="review-text">"Yes they were helpful and I'd pay for it. I offer those things myself so I understand the effort and effect."</p>
+    </div>
+    <div class="reviewer-profile">
+      <span class="reviewer-handle">@YOUnique Socials</span>
+      <span class="reviewer-tag">ATL Creative Agency Business</span>
+    </div>
+  </div>
 
-<div class="review">
-★★★★★
-<br><br>
-<p>"Your logos look really nice — simple and well thought out. I like how you’ve kept the designs clean and balanced."</p>
-<p>@canva._.vibe | Digital Design & eBooks</p>
-</div>
+  <div class="review">
+    <div>
+      <div class="stars">★★★★★</div>
+      <p class="review-text">"Your logos look really nice — simple and well thought out. I like how you’ve kept the designs clean and balanced."</p>
+    </div>
+    <div class="reviewer-profile">
+      <span class="reviewer-handle">@canva._.vibe</span>
+      <span class="reviewer-tag">Digital Design &amp; eBooks Creator</span>
+    </div>
+  </div>
 
 </div>
 
